@@ -922,6 +922,12 @@ properties:
           - const: rockchip,rk3568-bpi-r2pro
           - const: rockchip,rk3568
 
+      - description: Toybrick RK3399ProX
+        items:
+          - const: toybrick,rk3399prox
+          - const: toybrick,rk3399prox-som
+          - const: rockchip,rk3399pro
+
 additionalProperties: true
 
 ...

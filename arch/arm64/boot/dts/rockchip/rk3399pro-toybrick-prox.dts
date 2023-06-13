@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2019 Fuzhou Rockchip Electronics Co., Ltd
+ */
+
+/dts-v1/;
+
+#include "rk3399pro-toybrick-prox-som.dtsi"
+#include "rk3399pro-toybrick-prox.dtsi"
+
+/ {
+	model = "Toybrick RK3399ProX";
+	compatible = "toybrick,rk3399prox", "toybrick,rk3399prox-som", "rockchip,rk3399pro";
+};
