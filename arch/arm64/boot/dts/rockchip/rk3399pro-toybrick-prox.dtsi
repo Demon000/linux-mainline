@@ -64,7 +64,7 @@
 		compatible = "mmc-pwrseq-simple";
 
 		clocks = <&rk809 1>;
-		clock-names = "ext_clock";
+		clock-names = "lpo";
 		pinctrl-names = "default";
 		pinctrl-0 = <&wifi_reg_on_h>;
 		reset-gpios = <&gpio2 RK_PD3 GPIO_ACTIVE_LOW>;
@@ -163,13 +163,16 @@
 		compatible = "brcm,bcm4345c5";
 
 		clocks = <&rk809 1>;
-		clock-names = "ext_clock";
+		clock-names = "lpo";
 		pinctrl-names = "default";
 		pinctrl-0 = <&bt_host_wake_l &bt_wake_l &bt_reg_on_h>;
+		max-speed = <1500000>;
 
 		device-wakeup-gpios = <&gpio2 RK_PD2 GPIO_ACTIVE_HIGH>;
 		host-wakeup-gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_HIGH>;
 		reset-gpios = <&gpio2 RK_PD4 GPIO_ACTIVE_LOW>;
+		vbat-supply = <&vcc3v3_sys>;
+		vddio-supply = <&vcc_1v8_s3>;
 	};
 };
 
