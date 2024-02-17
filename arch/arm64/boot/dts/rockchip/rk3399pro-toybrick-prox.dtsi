@@ -220,7 +220,6 @@ vcc3v3_lan: &vccio_3v3 {};
 
 /*
  * Level translated from 3V (VCCIO_3V0) to 5V (VCC5V0_SYS).
- * How should this be modeled?
  */
 ddc: &i2c3_hdmi {
 	status = "okay";
@@ -228,7 +227,6 @@ ddc: &i2c3_hdmi {
 
 /*
  * Level translated from 3V (VCCIO_3V0) to 5V (VCC5V0_SYS).
- * How should this be modeled?
  */
 hdmi_port_cec: &hdmi_cec {};
 
@@ -256,7 +254,6 @@ vcc_pcie_12v: &vcc12v_dcin {};
 
 /*
  * Level translated from 1.8V (VCC_1V8_S3) to 3.3V (VCC_PCIE_3V3).
- * How should this be modeled?
  */
 i2c1_3v3: &i2c1_1v8 {
 	status = "okay";
@@ -275,7 +272,6 @@ i2c1_3v3: &i2c1_1v8 {
 
 /*
  * Level translated from 1.8V (VCC_1V8_S3) to 3.3V (VCCIO_3V3).
- * How should this be modeled?
  */
 i2c4_tp_3v3: &i2c4_tp {
 	status = "okay";
